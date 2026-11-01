@@ -1,0 +1,214 @@
+{
+    "jobs": [
+        {
+            "id": "1",
+            "title": "Frontend Developer",
+            "company": "Brightpath Labs",
+            "location": "Lagos, Nigeria",
+            "type": "Full-time",
+            "remote": false,
+            "salary": "₦900,000 - ₦1,400,000 / month",
+            "postedAt": "2026-10-26",
+            "description": "Join our product team to build fast, accessible interfaces for a fintech dashboard used by thousands of small businesses.",
+            "responsibilities": [
+                "Build and maintain UI components in React and Next.js",
+                "Work with designers to turn Figma files into responsive pages",
+                "Write clean, tested, reusable code"
+            ],
+            "requirements": [
+                "2+ years of experience with React or Next.js",
+                "Strong HTML, CSS and TypeScript fundamentals",
+                "Experience building responsive layouts"
+            ]
+        },
+        {
+            "id": "2",
+            "title": "Backend Engineer (Node.js)",
+            "company": "Kora Systems",
+            "location": "Remote",
+            "type": "Full-time",
+            "remote": true,
+            "salary": "$2,500 - $4,000 / month",
+            "postedAt": "2026-10-25",
+            "description": "Design and scale REST APIs and background services powering a payments platform across West Africa.",
+            "responsibilities": [
+                "Design and build REST APIs with Node.js and NestJS",
+                "Optimise database queries and API performance",
+                "Participate in code reviews and on-call rotation"
+            ],
+            "requirements": [
+                "3+ years of backend experience",
+                "Solid knowledge of PostgreSQL",
+                "Familiarity with Docker and CI/CD"
+            ]
+        },
+        {
+            "id": "3",
+            "title": "Full-Stack Developer (Next.js & PHP)",
+            "company": "Pixelcraft Studio",
+            "location": "Abuja, Nigeria",
+            "type": "Full-time",
+            "remote": false,
+            "salary": "₦1,000,000 - ₦1,600,000 / month",
+            "postedAt": "2026-10-24",
+            "description": "Build client websites and web apps using Next.js on the frontend and WordPress/PHP on the backend.",
+            "responsibilities": [
+                "Develop headless WordPress sites with a Next.js frontend",
+                "Build custom WordPress plugins and REST endpoints",
+                "Deliver projects on time with a small team"
+            ],
+            "requirements": [
+                "Experience with Next.js and TypeScript",
+                "Working knowledge of PHP and WordPress",
+                "Comfortable communicating with clients"
+            ]
+        },
+        {
+            "id": "4",
+            "title": "UI/UX Designer",
+            "company": "Brightpath Labs",
+            "location": "Lagos, Nigeria",
+            "type": "Contract",
+            "remote": true,
+            "salary": "₦600,000 - ₦900,000 / month",
+            "postedAt": "2026-10-22",
+            "description": "6-month contract to redesign our onboarding flow and maintain our design system.",
+            "responsibilities": [
+                "Create wireframes, prototypes and high-fidelity designs",
+                "Maintain and extend the design system in Figma",
+                "Run quick usability tests"
+            ],
+            "requirements": [
+                "Portfolio showing product design work",
+                "Proficiency in Figma",
+                "Understanding of accessibility basics"
+            ]
+        },
+        {
+            "id": "5",
+            "title": "DevOps Engineer",
+            "company": "Northwind Cloud",
+            "location": "Remote",
+            "type": "Full-time",
+            "remote": true,
+            "salary": "$3,000 - $4,500 / month",
+            "postedAt": "2026-10-20",
+            "description": "Own our cloud infrastructure, CI/CD pipelines and monitoring across multiple environments.",
+            "responsibilities": [
+                "Manage infrastructure with Terraform on AWS",
+                "Improve CI/CD pipelines and deployment reliability",
+                "Set up monitoring, logging and alerting"
+            ],
+            "requirements": [
+                "3+ years in DevOps or SRE roles",
+                "Experience with Kubernetes and Docker",
+                "Strong Linux and networking knowledge"
+            ]
+        },
+        {
+            "id": "6",
+            "title": "Junior Web Developer",
+            "company": "Pixelcraft Studio",
+            "location": "Abuja, Nigeria",
+            "type": "Part-time",
+            "remote": false,
+            "salary": null,
+            "postedAt": "2026-10-19",
+            "description": "Part-time role for an early-career developer to help with bug fixes, small features and site maintenance.",
+            "responsibilities": [
+                "Fix bugs and handle small feature requests",
+                "Update content and plugins on client sites",
+                "Learn from senior developers through pair programming"
+            ],
+            "requirements": [
+                "Basic HTML, CSS and JavaScript",
+                "Willingness to learn PHP and WordPress",
+                "Available 20 hours per week"
+            ]
+        },
+        {
+            "id": "7",
+            "title": "Technical Writer",
+            "company": "Kora Systems",
+            "location": "Remote",
+            "type": "Contract",
+            "remote": true,
+            "salary": "$1,200 - $1,800 / month",
+            "postedAt": "2026-10-17",
+            "description": "Create clear API documentation, tutorials and integration guides for our developer community.",
+            "responsibilities": [
+                "Write and maintain API reference and guides",
+                "Collaborate with engineers to document new features",
+                "Review docs for accuracy and clarity"
+            ],
+            "requirements": [
+                "Experience writing developer documentation",
+                "Ability to read and test code samples",
+                "Excellent written English"
+            ]
+        },
+        {
+            "id": "8",
+            "title": "Senior Software Engineer, Platform Reliability and Developer Experience",
+            "company": "Northwind Cloud",
+            "location": "Lagos, Nigeria",
+            "type": "Full-time",
+            "remote": false,
+            "salary": "₦2,500,000 - ₦3,500,000 / month",
+            "postedAt": "2026-10-15",
+            "description": "Lead efforts to improve the reliability of our core platform and the daily experience of our internal engineering teams.",
+            "responsibilities": [
+                "Design internal tooling that speeds up developer workflows",
+                "Lead reliability and performance improvements",
+                "Mentor mid-level and junior engineers"
+            ],
+            "requirements": [
+                "6+ years of software engineering experience",
+                "Experience leading technical projects",
+                "Strong system design skills"
+            ]
+        },
+        {
+            "id": "9",
+            "title": "QA Engineer",
+            "company": "Brightpath Labs",
+            "location": "Lagos, Nigeria",
+            "type": "Full-time",
+            "remote": false,
+            "salary": "₦700,000 - ₦1,100,000 / month",
+            "postedAt": "2026-10-12",
+            "description": "Own quality across our web and mobile products with a mix of manual and automated testing.",
+            "responsibilities": [
+                "Write and maintain automated end-to-end tests",
+                "Create test plans for new features",
+                "Report and track bugs through to resolution"
+            ],
+            "requirements": [
+                "Experience with Playwright or Cypress",
+                "Attention to detail",
+                "Understanding of the software development lifecycle"
+            ]
+        },
+        {
+            "id": "10",
+            "title": "Data Analyst Intern",
+            "company": "Kora Systems",
+            "location": "Remote",
+            "type": "Internship",
+            "remote": true,
+            "salary": null,
+            "postedAt": "2026-10-08",
+            "description": "3-month internship working with our analytics team on dashboards and reporting.",
+            "responsibilities": [
+                "Build dashboards and weekly reports",
+                "Clean and analyse transaction data",
+                "Present findings to the product team"
+            ],
+            "requirements": [
+                "Basic SQL and spreadsheet skills",
+                "Currently studying or recently graduated",
+                "Curiosity and clear communication"
+            ]
+        }
+    ]
+}
