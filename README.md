@@ -1,10 +1,10 @@
-# Careerboard — Next.js Job Board
+# Careerboard - Next.js Job Board
 
 Careerboard is a responsive job board application built with Next.js. It allows candidates to browse job opportunities, search and filter listings, view job details, and submit applications through an application form.
 
 The project focuses on building a practical full-stack application with reusable React components, API routes, form validation, responsive UI, and light/dark theme support.
 
-![Careerboard Landing Page](./public/landing-page.PNG)
+![Careerboard Landing Page](./public/landing-page.png)
 
 <p align="center">
   <a href="https://github.com/cyberar/job-board-application">View Repository</a>
