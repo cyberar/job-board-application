@@ -211,7 +211,7 @@ export default function JobList() {
           </div>
 
           <h3 className="text-xl font-bold text-foreground">
-            We couldn't load the jobs
+            We couldn&apos;t load the jobs
           </h3>
 
           <p className="mt-2 text-sm text-muted-foreground">

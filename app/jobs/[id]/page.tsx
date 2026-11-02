@@ -17,8 +17,17 @@ import { formatDate } from "@/lib/date";
 import ApplyForm from "@/components/apply-form";
 import { Button } from "@/components/ui/button";
 
+
 type JobResponse = {
   job: Job;
+};
+
+type JobRequestState = {
+  key: string;
+  job: Job | null;
+  loading: boolean;
+  error: string;
+  notFound: boolean;
 };
 
 type JobDetailPageProps = {
@@ -67,18 +76,28 @@ function JobDetailContent({
 }: JobDetailPageProps) {
   const { id } = use(params);
 
-  const [job, setJob] = useState<Job | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState("");
-  const [notFound, setNotFound] = useState(false);
   const [retry, setRetry] = useState(0);
+
+  const requestKey = `${id}:${retry}`;
+
+  const [request, setRequest] = useState<JobRequestState>({
+    key: "",
+    job: null,
+    loading: true,
+    error: "",
+    notFound: false,
+  });
+
+  // Derive the UI state from the current request key.
+  const isCurrentRequest = request.key === requestKey;
+
+  const job = isCurrentRequest ? request.job : null;
+  const loading = !isCurrentRequest || request.loading;
+  const error = isCurrentRequest ? request.error : "";
+  const notFound = isCurrentRequest && request.notFound;
 
   useEffect(() => {
     const controller = new AbortController();
-
-    setLoading(true);
-    setNotFound(false);
-    setError("");
 
     async function load() {
       try {
@@ -90,7 +109,14 @@ function JobDetailContent({
         );
 
         if (response.status === 404) {
-          setNotFound(true);
+          setRequest({
+            key: requestKey,
+            job: null,
+            loading: false,
+            error: "",
+            notFound: true,
+          });
+
           return;
         }
 
@@ -103,18 +129,25 @@ function JobDetailContent({
           );
         }
 
-        setJob(data.job);
+        setRequest({
+          key: requestKey,
+          job: data.job,
+          loading: false,
+          error: "",
+          notFound: false,
+        });
       } catch (e) {
         if (!controller.signal.aborted) {
-          setError(
-            e instanceof Error
-              ? e.message
-              : "Something went wrong."
-          );
-        }
-      } finally {
-        if (!controller.signal.aborted) {
-          setLoading(false);
+          setRequest({
+            key: requestKey,
+            job: null,
+            loading: false,
+            error:
+              e instanceof Error
+                ? e.message
+                : "Something went wrong.",
+            notFound: false,
+          });
         }
       }
     }
@@ -124,7 +157,7 @@ function JobDetailContent({
     return () => {
       controller.abort();
     };
-  }, [id, retry]);
+  }, [id, retry, requestKey]);
 
   return (
     <main className="mx-auto w-full max-w-7xl flex-1 px-4 py-10 sm:px-6 md:py-14 lg:px-8">
